@@ -25,7 +25,17 @@ $isOk = 'true';
     <main class="container-fluid">
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-            <p><?php if ($isOk == 'false' ){ echo 'c\'est ok !!';} else if ($isOk == 'true' ){ echo 'c\'est pas bon !!!';} else { echo 'c\'est pas valide !!';}?> </p>
+                <p>
+                    <?php
+                    if ($isOk == 'false') {
+                        echo 'c\'est ok !!';
+                    } else if ($isOk == 'true') {
+                        echo 'c\'est pas bon !!!';
+                    } else {
+                        echo 'c\'est pas valide !!';
+                    }
+                    ?>
+                </p>
             </div>
         </div>
     </main>

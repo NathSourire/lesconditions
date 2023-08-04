@@ -1,5 +1,5 @@
 <?php
-$age = '5';
+$age = '18';
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +28,8 @@ $age = '5';
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
             <p><?php if ($age >= 18 ){ echo 'Tu es majeur';} else { echo 'Tu n\'es pas majeur';} ?> </p>
+            <!-- autre tech -->
+            <p><?php if ($age < 18 ){ echo 'Tu n\'es pas majeur';} else { echo 'Tu es majeur';} ?> </p>
             </div>
         </div>
     </main>

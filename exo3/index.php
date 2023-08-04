@@ -1,6 +1,9 @@
 <?php
-$homme = '50';
-$femme = '';
+// $homme = '10';
+$gender = 'homme';
+$age = '19';
+if ($gender = 'femme' ){ $resultGender = 'Vous êtes une femme!';} elseif ($gender = 'homme' ) { $resultGender = 'Vous êtes un homme!';} else { $resultGender = 'Entrez un genre valide!';} 
+if ($age < 0 || $age > 100){ $result = "Entrez un age valide";} else {if ($age >= 18){ $result = 'Vous êtes majeur!';} else { $result = 'Vous êtes mineur!';} }
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +42,7 @@ Gérer tous les cas.  </p>
     <main class="container- fluid">
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-            <p><?php if ($homme >= 18 ){ echo "Vous êtes majeur!";} elseif ($femme >= 18){ echo "Vous êtes majeur!";} else { echo "Vous êtes mineur";}  ?> </p>
+            <p><?php echo "$result $resultGender" ;?> </p>
             </div>
         </div>
     </main>
