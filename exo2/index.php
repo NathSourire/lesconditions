@@ -1,5 +1,5 @@
 <?php
-$name = 'Nathalie';
+$isEasy = 'true';
 ?>
 
 <!DOCTYPE html>
@@ -19,18 +19,15 @@ $name = 'Nathalie';
         <div class="row">
             <img class="imgLogo col-3" src="./public/assets/img/PHP-logo.png" alt="Logo PHP">
             <h1 class="col-7">Exercice 2</h1>
-            <p>Créer une variable name et l'initialiser avec la valeur de votre choix. Afficher son contenu.</p>
+            <p>Créer une variable isEasy de type booléan et l'initialiser avec une valeur.
+                Afficher C'est facile !! si c'est vrai. Dans le cas contraire afficher C'est difficile !!!.</p>
         </div>
     </header>
     <main class="container- fluid">
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-                <p>
-                    <?php
-                    echo "$name";
-                    ?>
-                </p>
-                <p><?=$name?></p>
+            <p><?php echo "$isEasy";?></p>
+            <p><?php if ($isEasy == true){ echo "C'est facile !!";}  ?> </p>
             </div>
         </div>
     </main>

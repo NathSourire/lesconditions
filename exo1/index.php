@@ -1,5 +1,5 @@
 <?php
-$name = 'Nathalie';
+$age = '21';
 ?>
 
 <!DOCTYPE html>
@@ -24,17 +24,11 @@ $name = 'Nathalie';
                 êtes mineur.</p>
         </div>
     </header>
-    <main class="container- fluid">
+    <main class="container-fluid" >
         <div class="row">
-            <div class="results position-absolute top-50 start-50 translate-middle ">
-                <p>
-                    <?php
-                    echo "$name";
-                    ?>
-                </p>
-                <p>
-                    <?= $name ?>
-                </p>
+        <div class="results position-absolute top-50 start-50 translate-middle ">
+                <p><?php echo "$age";?></p>
+                <p><?php if ($age >= 18){ echo "Vous êtes majeur!";}  ?> </p>
             </div>
         </div>
     </main>
